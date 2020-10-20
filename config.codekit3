@@ -46,21 +46,32 @@
 		"oAP": "/design/GSAP-Intro-HW.sketch",
 		"oF": 0
 		},
-	"/design/toggle-graphic-day-03.svg": {
+	"/design/toggle-graphic-day.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/design/toggle-graphic-day-03.svg",
+		"oAP": "/design/toggle-graphic-day.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/design/toggle-graphic-night-04.svg": {
+	"/design/toggle-graphic-night-04.png": {
+		"ft": 32768,
+		"iS": 32154,
+		"oA": 0,
+		"oAP": "/design/toggle-graphic-night-04.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/toggle-graphic-night.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/design/toggle-graphic-night-04.svg",
+		"oAP": "/design/toggle-graphic-night.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,

@@ -18,6 +18,7 @@ toggle.addEventListener('click',()=>{
     buttonTl.reverse();
   } else {
     toggle.className = "toggle-button active";
+    
     buttonTl.play();
   }  
 });
