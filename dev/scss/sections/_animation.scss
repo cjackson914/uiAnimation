@@ -2,93 +2,79 @@
     Demo
 ============= */
 
-body { font-family: sans-serif;
-    background-color:$darkblue; }
-  
-  .container{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    min-height:-webkit-fill-available;
-    flex:1;  
-  }
-  
-  svg{
-    // transform: scale(1.5);
-  }
-  
-  .toggle-container{
-    justify-content:center;
-    align-items:center;
-    display:flex;
-    width:300px;
-    height:200px;
-    
+body {
+  background-color: $darkblue;
+}
 
-    
-    .toggle-button{
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: -webkit-fill-available;
+  flex: 1;
+}
+
+
+.toggle-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 300px;
+  height: 200px;
+
+
+
+  .toggle-button {
+    position: absolute;
+
+    svg {
+      width: 96%;
+      border-radius: 60px;
       position: absolute;
-      svg{
-        width: 96%;
-        border-radius:60px;
-        position: absolute;
-      }
-      // // #background-day{
-      // //   // display:none;
-      // // }
-      #background-night{
-        visibility: hidden;
-      }
-
-      width:300px;
-      cursor:pointer;
-      height:108px;
-      background-color: $blue;
-      border-radius:60px;
-      padding:6px;
-      display:flex;  
-      transition: all 0.5s;
     }
-    
-    .toggle-head{
-      min-height:110px;
-      background-color:$yellow;
-      position: absolute;
-      z-index: 100;
-      width:110px;
-      border-radius:60px;
-      display:flex;
-      justify-content:center;
-      align-items:center;
+
+    // #background-day{
+    //   // display:none;
+    // }
+    // #background-night{
+    //   display:none;
+    // }
+
+    width:300px;
+    cursor:pointer;
+    height:108px;
+    background-color: $blue;
+    border-radius:60px;
+    padding:6px;
+    display:flex;
+    transition: all 0.5s;
+  }
+
+  .toggle-head {
+    min-height: 108px;
+    background-color: $yellow;
+    position: absolute;
+    z-index: 100;
+    width: 110px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: margin 0.3s ease-in-out, background-color 0.8s, transform 0.5s;
+  }
+
+  .active {
+    .toggle-head {
+      animation: rotatingicon 0.4s linear;
+      margin-left: 175px !important;
+      background-color: rgba(255, 255, 255, 0) !important;
+      height: 100px;
+      width: 100px;
+      border-right: 25px solid $grey;
+      border-radius: 100%;
       transition: margin 0.3s ease-in-out, background-color 0.8s, transform 0.5s;
     }
-  
-    .active{
-      .toggle-head{
-        animation:rotatingicon 0.4s linear;
-        margin-left: 190px !important;
-        background-color: $grey !important;
-        transition: margin 0.3s ease-in-out,       background-color 0.8s, transform 0.5s;
-      }
-    }
-  
-    .toggle-head-icon svg{
-      color:red;  
-      width:30px;
-    }
-  
-    // path { fill: white; }
   }
-  
-  // @keyframes rotatingicon{
-  //   0%{
-  //     transform: rotate(0deg)
-  //   }
-  //   40%{
-  //     transform:rotate(-180deg);
-  //   }
-  //   100%{
-  //     transform:rotate(-360deg);
-  //   }
-  // }
+
+}

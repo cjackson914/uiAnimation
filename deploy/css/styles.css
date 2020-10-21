@@ -380,7 +380,6 @@ textarea {
     Demo
 ============= */
 body {
-  font-family: sans-serif;
   background-color: #15557b; }
 
 .container {
@@ -411,10 +410,8 @@ body {
       width: 96%;
       border-radius: 60px;
       position: absolute; }
-    .toggle-container .toggle-button #background-night {
-      visibility: hidden; }
   .toggle-container .toggle-head {
-    min-height: 110px;
+    min-height: 108px;
     background-color: #EFD9A7;
     position: absolute;
     z-index: 100;
@@ -426,9 +423,10 @@ body {
     transition: margin 0.3s ease-in-out, background-color 0.8s, transform 0.5s; }
   .toggle-container .active .toggle-head {
     animation: rotatingicon 0.4s linear;
-    margin-left: 190px !important;
-    background-color: #d1d3d4 !important;
-    transition: margin 0.3s ease-in-out,       background-color 0.8s, transform 0.5s; }
-  .toggle-container .toggle-head-icon svg {
-    color: red;
-    width: 30px; }
+    margin-left: 175px !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    height: 100px;
+    width: 100px;
+    border-right: 25px solid #d1d3d4;
+    border-radius: 100%;
+    transition: margin 0.3s ease-in-out, background-color 0.8s, transform 0.5s; }
