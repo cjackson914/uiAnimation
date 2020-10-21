@@ -1,11 +1,13 @@
 import {gsap} from "gsap";
 
-import {toggleAnimation} from "./animation.js";
+import {toggleAnimation, backgroundAnimation} from "./animation.js";
+toggleAnimation();
+backgroundAnimation();
 
 
 const mainTL = gsap.timeline({paused:true});
 
-mainTL.add(toggleAnimation())
+mainTL.add(toggleAnimation());
 
 
 // var toggle = document.getElementById("toggle-button");
