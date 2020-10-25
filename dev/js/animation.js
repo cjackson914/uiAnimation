@@ -1,16 +1,17 @@
-import {gsap} from "gsap";
-import {MorphSVGPlugin} from "gsap/MorphSVGPlugin";
-import {DrawSVGPlugin} from "gsap/DrawSVGPlugin";
-gsap.registerPlugin(MorphSVGPlugin);
-gsap.registerPlugin(DrawSVGPlugin);
+import { gsap } from "gsap";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+
+gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin);
 
 const campingTL = gsap.timeline();
 
 export function toggleAnimation(){
 
   campingTL.to("#sky",{duration:1, fill:"#3a6f84"},"play")
-  .to("#sun",{morphSVG:"#moon", duration: 1, x:192, alpha:0},"play")
-  // .from("#moon",{morphSVG:"#sun", duration: 1, x:-192, alpha:0},"play")
+  // .to("#sun",{morphSVG:"#moon", duration: 1, x:192},"play")
+  .to("#sun",{morphSVG:{shape:"#moon"}, duration: 1, x:192},"play")
+
 
   .to("#ground",{duration: 1, fill:"#29353a"},"play")
   .to("#lake",{duration: 1, alpha:0},"play")
@@ -20,7 +21,7 @@ export function toggleAnimation(){
   .to("#tree1, #tree2, #tree3",{duration: 1, alpha:0},"play")
 
   .from("#tent",{duration: 1, alpha:0},"play")
-  .from("#logs",{duration: 1, alpha:0},"play")
+  .from("#logs-2",{duration: 1, alpha:0},"play")
   .from("#fire",{duration: 1, alpha:0},"play")
   .from("#mainstar",{duration: 1, alpha:0},"play")
   .from("#shoot1",{duration: 1, alpha:0, drawSVG: "100%"},"play")
