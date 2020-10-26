@@ -344,6 +344,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/node_modules/gsap/DrawSVGPlugin.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/DrawSVGPlugin-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/node_modules/gsap/gsap-core.js": {
 		"bF": 0,
 		"ft": 64,
@@ -362,6 +373,28 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/gsap/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/gsap/MorphSVGPlugin.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/MorphSVGPlugin-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/gsap/utils/paths.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/utils/paths-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

@@ -2,9 +2,10 @@
     Demo
 ============= */
 
-body {
+body{
   background-color: $darkblue;
-}
+  }
+
 
 .container {
   display: flex;
@@ -32,6 +33,14 @@ body {
       width: 96%;
       border-radius: 60px;
       position: absolute;
+    }
+    #sunmoon{
+      height:91%;
+      position: absolute;
+      border-radius: 60px;
+    }
+    #moon{
+      visibility: hidden;
     }
 
     // #background-day{

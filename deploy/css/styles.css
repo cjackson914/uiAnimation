@@ -410,3 +410,9 @@ body {
       width: 96%;
       border-radius: 60px;
       position: absolute; }
+    .toggle-container .toggle-button #sunmoon {
+      height: 91%;
+      position: absolute;
+      border-radius: 60px; }
+    .toggle-container .toggle-button #moon {
+      visibility: hidden; }
