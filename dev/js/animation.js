@@ -9,9 +9,6 @@ const campingTL = gsap.timeline();
 export function toggleAnimation(){
 
   campingTL.to("#sky",{duration:1, fill:"#3a6f84"},"play")
-  // .to("#sun",{morphSVG:"#moon", duration: 1, x:192},"play")
-  // .to("#sun",{morphSVG:{shape:"#moon"}, duration: 1, x:50},"play")
-  // .from("#moon",{morphSVG:{shape:"#sun"}, duration: 1, fill:"#EFD9A7"},"play")
   .to("#sun",{morphSVG:{shape:"#moon"}, duration: 1, x:193, fill:"#D1D3D4"},"play")
   .from("#mooncraters",{duration: .3, alpha:0})
 
@@ -32,24 +29,4 @@ export function toggleAnimation(){
 
 
   return campingTL;
-
-
-// var background = backgroundNight.from("#background-night",{alpha:0});
-// background.reverse();
-
-// toggle.onclick = function() {
-//   background.reversed(!background.reversed());
-// }
-
-// toggle.addEventListener('click',()=>{
-//   if(toggle.className.includes("active")){
-//     toggle.className = "background-night";
-//     buttonTl.reverse();
-//   } else {
-//     toggle.className = "background-day";
-    
-//     buttonTl.play();
-//   }  
-// });
-
 }

@@ -2,10 +2,9 @@
     Demo
 ============= */
 
-body{
+body {
   background-color: $darkblue;
-  }
-
+}
 
 .container {
   display: flex;
@@ -34,21 +33,16 @@ body{
       border-radius: 60px;
       position: absolute;
     }
-    #sunmoon{
-      height:91%;
+
+    #sunmoon {
+      height: 91%;
       position: absolute;
       border-radius: 60px;
     }
-    #moon{
+
+    #moon {
       visibility: hidden;
     }
-
-    // #background-day{
-    //   // display:none;
-    // }
-    // #background-night{
-    //   display:none;
-    // }
 
     width:300px;
     cursor:pointer;
@@ -58,32 +52,6 @@ body{
     padding:6px;
     display:flex;
     transition: all 0.5s;
-  }
-
-  .toggle-head {
-    // min-height: 108px;
-    // background-color: $yellow;
-    // position: absolute;
-    // z-index: 100;
-    // width: 110px;
-    // border-radius: 60px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // transition: margin 0.3s ease-in-out, background-color 0.8s, transform 0.5s;
-  }
-
-  .active {
-    .toggle-head {
-      // animation: rotatingicon 0.4s linear;
-      // margin-left: 175px !important;
-      // background-color: rgba(255, 255, 255, 0) !important;
-      // height: 100px;
-      // width: 100px;
-      // border-right: 25px solid $grey;
-      // border-radius: 100%;
-      // transition: margin 0.3s ease-in-out, background-color 0.8s, transform 0.5s;
-    }
   }
 
 }
